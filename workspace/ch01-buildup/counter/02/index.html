@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+  </head>
+  <body>
+    <!-- <div id="app">
+      <header>
+        <h1>Counter - JS로 UI 구성</h1>
+        <p>파일 경로: <span id="filepath"></span></p>
+      </header>
+      <div id="counter">
+        <button type="button" onclick="handleDown()">-</button>
+        <button type="button" onclick="handleReset(event)">0</button>
+        <button type="button" onclick="handleUp()">+</button>
+        <span>0</span>
+      </div>
+    </div> -->
+
+    <div id="root"></div>
+
+    <script type="text/javascript">
+      // <h1>Counter - JS로 UI 구성</h1> 만들기
+      const $h1 = document.createElement("h1");
+      const h1Text = document.createTextNode("Counter - JS로 UI 구성");
+      $h1.appendChild(h1Text);
+
+      // <p>파일 경로: <span id="filepath"></span></p> 만들기
+      const $fileP = document.createElement("p");
+      const pText = document.createTextNode("파일 경로: ");
+      const $filePathSpan = document.createElement("span");
+      $filePathSpan.setAttribute("id", "filepath");
+      $fileP.appendChild(pText);
+      $fileP.appendChild($filePathSpan);
+
+      // <button type="button" onclick="handleDown()">-</button> 만들기
+      const $downButton = document.createElement("button");
+      const downButtonText = document.createTextNode("-");
+      $downButton.setAttribute("type", "button");
+      $downButton.setAttribute("onclick", "handleDown()");
+      $downButton.appendChild(downButtonText);
+
+      // <button type="button" onclick="handleReset(event)">0</button> 만들기
+      const $resetButton = document.createElement("button");
+      const resetButtonText = document.createTextNode("0");
+      $resetButton.setAttribute("type", "button");
+      $resetButton.setAttribute("onclick", "handleReset(event)");
+      $resetButton.appendChild(resetButtonText);
+
+      // <button type="button" onclick="handleUp()">+</button> 만들기
+      const $upButton = document.createElement("button");
+      const upButtonText = document.createTextNode("+");
+      $upButton.setAttribute("type", "button");
+      $upButton.setAttribute("onclick", "handleUp()");
+      $upButton.appendChild(upButtonText);
+
+      // <span>0</span> 만들기
+      const $countSpan = document.createElement("span");
+      const countSpanText = document.createTextNode("0");
+      $countSpan.appendChild(countSpanText);
+
+      // <header></header> 만들기
+      const $header = document.createElement("header");
+      $header.appendChild($h1);
+      $header.appendChild($fileP);
+
+      // <div id="counter"></div> 만들기
+      const $counterDiv = document.createElement("div");
+      $counterDiv.setAttribute("id", "counter");
+      $counterDiv.appendChild($downButton);
+      $counterDiv.appendChild($resetButton);
+      $counterDiv.appendChild($upButton);
+      $counterDiv.appendChild($countSpan);
+
+      // <div id="app"></div> 만들기
+      const $appDiv = document.createElement("div");
+      $appDiv.setAttribute("id", "app");
+      $appDiv.appendChild($header);
+      $appDiv.appendChild($counterDiv);
+
+      document.getElementById("root").appendChild($appDiv);
+    </script>
+
+    <script type="text/javascript">
+      document.querySelector("#filepath").textContent = `ch${document.URL.split("/ch")[1]}`;
+    </script>
+
+    <script type="text/javascript">
+      let count = 0;
+
+      // 값을 줄이는 함수
+      const handleDown = () => {
+        // TODO : 데이터 갱신
+        count--;
+
+        // TODO : 화면 갱신
+        const $counterSpan = document.querySelector("#counter > span");
+        $counterSpan.textContent = count;
+      };
+
+      // 값을 증가시키는 함수
+      const handleUp = () => {
+        // TODO : 데이터 갱신
+        count++;
+
+        // TODO : 화면 갱신
+        const $counterSpan = document.querySelector("#counter > span");
+        $counterSpan.textContent = count;
+      };
+
+      // 값을 0으로 초기화 시키는 함수
+      const handleReset = (event) => {
+        // TODO : 데이터 갱신
+        count = 0;
+
+        // TODO : 화면 갱신
+        const $counterSpan = document.querySelector("#counter > span");
+        $counterSpan.textContent = count;
+      };
+    </script>
+  </body>
+</html>

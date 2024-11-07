@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="module">
+      import obj from "./main.js";
+
+      // 애플리케이션의 시작점
+      function App() {
+        return obj.createElement(
+          "div",
+          { id: "app" },
+          obj.createElement(
+            "header",
+            null,
+            obj.createElement("h1", null, "Counter - createElement() 라이브러리 사용"),
+            obj.createElement(
+              "p",
+              null,
+              "파일 경로: ",
+              obj.createElement("span", { id: "filepath" }, `ch${document.URL.split("/ch")[1]}`)
+            )
+          ),
+          obj.createElement(
+            "div",
+            { id: "counter" },
+            obj.createElement("button", { type: "button", onclick: "handleDown()" }, "-"),
+            obj.createElement("button", { type: "button", onclick: "handleReset(event)" }, 0),
+            obj.createElement("button", { type: "button", onclick: "handleUp()" }, "+"),
+            obj.createElement("span", null, 0)
+          )
+        );
+      }
+
+      obj.createRoot(document.getElementById("root")).render(App);
+    </script>
+
+    <script type="text/javascript">
+      let count = 0;
+
+      // 값을 줄이는 함수
+      const handleDown = () => {
+        // TODO : 데이터 갱신
+        count--;
+
+        // TODO : 화면 갱신
+        const $counterSpan = document.querySelector("#counter > span");
+        $counterSpan.textContent = count;
+      };
+
+      // 값을 증가시키는 함수
+      const handleUp = () => {
+        // TODO : 데이터 갱신
+        count++;
+
+        // TODO : 화면 갱신
+        const $counterSpan = document.querySelector("#counter > span");
+        $counterSpan.textContent = count;
+      };
+
+      // 값을 0으로 초기화 시키는 함수
+      const handleReset = (event) => {
+        // TODO : 데이터 갱신
+        count = 0;
+
+        // TODO : 화면 갱신
+        const $counterSpan = document.querySelector("#counter > span");
+        $counterSpan.textContent = count;
+      };
+    </script>
+  </body>
+</html>

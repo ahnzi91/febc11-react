@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="module">
+      import obj from "./main.js";
+
+      function Header() {
+        return obj.createElement(
+          "header",
+          null,
+          obj.createElement("h1", null, "Counter - 컴포넌트로 분리"),
+          obj.createElement(
+            "p",
+            null,
+            "파일 경로: ",
+            obj.createElement("span", { id: "filepath" }, `ch${document.URL.split("/ch")[1]}`)
+          )
+        );
+      }
+
+      function Counter() {
+        let count = 0;
+        const handleDown = () => {
+          count--;
+          const $counterSpan = document.querySelector("#counter > span");
+          $counterSpan.textContent = count;
+        };
+
+        const handleUp = () => {
+          count++;
+          const $counterSpan = document.querySelector("#counter > span");
+          $counterSpan.textContent = count;
+        };
+
+        const handleReset = (event) => {
+          count = 0;
+          const $counterSpan = document.querySelector("#counter > span");
+          $counterSpan.textContent = count;
+        };
+
+        return obj.createElement(
+          "div",
+          { id: "counter" },
+          obj.createElement("button", { type: "button", onclick: handleDown }, "-"),
+          obj.createElement(
+            "button",
+            { type: "button", onclick: (event) => handleReset(event) },
+            0
+          ),
+          obj.createElement("button", { type: "button", onclick: handleUp() }, "+"),
+          obj.createElement("span", null, 0)
+        );
+      }
+
+      function App() {
+        return obj.createElement("div", { id: "app" }, Header, Counter);
+      }
+
+      obj.createRoot(document.getElementById("root")).render(App);
+    </script>
+  </body>
+</html>

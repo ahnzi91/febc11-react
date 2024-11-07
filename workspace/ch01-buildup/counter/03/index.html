@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+  </head>
+  <body>
+    <!-- <div id="app">
+      <header>
+        <h1>Counter - JS로 UI 구성</h1>
+        <p>파일 경로: <span id="filepath"></span></p>
+      </header>
+      <div id="counter">
+        <button type="button" onclick="handleDown()">-</button>
+        <button type="button" onclick="handleReset(event)">0</button>
+        <button type="button" onclick="handleUp()">+</button>
+        <span>0</span>
+      </div>
+    </div> -->
+
+    <div id="root"></div>
+
+    <script type="module">
+      // type="module"은 defer 속성을 지정한 것처럼 지연 실행됨
+      // HTML 파싱을 멈추지 않고, HTML 파싱이 끝난 이후에 실행된다.
+      // module은 선언한 순서대로 실행된다.
+
+      import obj from "./main.js";
+
+      const $h1 = obj.createElement("h1", null, "Counter - createElement() 라이브러리 사용");
+
+      const $p = obj.createElement(
+        "p",
+        null,
+        "파일 경로: ",
+        obj.createElement("span", { id: "filepath" })
+      );
+
+      const $downButton = obj.createElement(
+        "button",
+        { type: "button", onclick: "handleDown()" },
+        "-"
+      );
+
+      const $resetButton = obj.createElement(
+        "button",
+        { type: "button", onclick: "handleReset(event)" },
+        0
+      );
+
+      const $upButton = obj.createElement("button", { type: "button", onclick: "handleUp()" }, "+");
+
+      const $span = obj.createElement("span", null, 0);
+
+      const $header = obj.createElement("header", null, $h1, $p);
+
+      const $counterDiv = obj.createElement(
+        "div",
+        { id: "counter" },
+        $downButton,
+        $resetButton,
+        $upButton,
+        $span
+      );
+
+      const $appDiv = obj.createElement("div", { id: "app" }, $header, $counterDiv);
+
+      document.getElementById("root").appendChild($appDiv);
+
+      document.querySelector("#filepath").textContent = `ch${document.URL.split("/ch")[1]}`;
+    </script>
+
+    <script type="text/javascript">
+      let count = 0;
+
+      // 값을 줄이는 함수
+      const handleDown = () => {
+        // TODO : 데이터 갱신
+        count--;
+
+        // TODO : 화면 갱신
+        const $counterSpan = document.querySelector("#counter > span");
+        $counterSpan.textContent = count;
+      };
+
+      // 값을 증가시키는 함수
+      const handleUp = () => {
+        // TODO : 데이터 갱신
+        count++;
+
+        // TODO : 화면 갱신
+        const $counterSpan = document.querySelector("#counter > span");
+        $counterSpan.textContent = count;
+      };
+
+      // 값을 0으로 초기화 시키는 함수
+      const handleReset = (event) => {
+        // TODO : 데이터 갱신
+        count = 0;
+
+        // TODO : 화면 갱신
+        const $counterSpan = document.querySelector("#counter > span");
+        $counterSpan.textContent = count;
+      };
+    </script>
+  </body>
+</html>
