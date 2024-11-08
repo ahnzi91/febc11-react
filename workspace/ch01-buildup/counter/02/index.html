@@ -6,34 +6,21 @@
     <title>Counter</title>
   </head>
   <body>
-    <!-- <div id="app">
-      <header>
-        <h1>Counter - JS로 UI 구성</h1>
-        <p>파일 경로: <span id="filepath"></span></p>
-      </header>
-      <div id="counter">
-        <button type="button" onclick="handleDown()">-</button>
-        <button type="button" onclick="handleReset(event)">0</button>
-        <button type="button" onclick="handleUp()">+</button>
-        <span>0</span>
-      </div>
-    </div> -->
-
     <div id="root"></div>
 
     <script type="text/javascript">
       // <h1>Counter - JS로 UI 구성</h1> 만들기
       const $h1 = document.createElement("h1");
-      const h1Text = document.createTextNode("Counter - JS로 UI 구성");
+      const h1Text = document.createTextNode("Counter - JS로 UI 구성하기");
       $h1.appendChild(h1Text);
 
       // <p>파일 경로: <span id="filepath"></span></p> 만들기
-      const $fileP = document.createElement("p");
+      const $p = document.createElement("p");
       const pText = document.createTextNode("파일 경로: ");
       const $filePathSpan = document.createElement("span");
       $filePathSpan.setAttribute("id", "filepath");
-      $fileP.appendChild(pText);
-      $fileP.appendChild($filePathSpan);
+      $p.appendChild(pText);
+      $p.appendChild($filePathSpan);
 
       // <button type="button" onclick="handleDown()">-</button> 만들기
       const $downButton = document.createElement("button");
@@ -57,14 +44,14 @@
       $upButton.appendChild(upButtonText);
 
       // <span>0</span> 만들기
-      const $countSpan = document.createElement("span");
-      const countSpanText = document.createTextNode("0");
-      $countSpan.appendChild(countSpanText);
+      const $span = document.createElement("span");
+      const spanText = document.createTextNode("0");
+      $span.appendChild(spanText);
 
       // <header></header> 만들기
       const $header = document.createElement("header");
       $header.appendChild($h1);
-      $header.appendChild($fileP);
+      $header.appendChild($p);
 
       // <div id="counter"></div> 만들기
       const $counterDiv = document.createElement("div");
@@ -72,7 +59,7 @@
       $counterDiv.appendChild($downButton);
       $counterDiv.appendChild($resetButton);
       $counterDiv.appendChild($upButton);
-      $counterDiv.appendChild($countSpan);
+      $counterDiv.appendChild($span);
 
       // <div id="app"></div> 만들기
       const $appDiv = document.createElement("div");
@@ -90,32 +77,20 @@
     <script type="text/javascript">
       let count = 0;
 
-      // 값을 줄이는 함수
       const handleDown = () => {
-        // TODO : 데이터 갱신
         count--;
-
-        // TODO : 화면 갱신
         const $counterSpan = document.querySelector("#counter > span");
         $counterSpan.textContent = count;
       };
 
-      // 값을 증가시키는 함수
       const handleUp = () => {
-        // TODO : 데이터 갱신
         count++;
-
-        // TODO : 화면 갱신
         const $counterSpan = document.querySelector("#counter > span");
         $counterSpan.textContent = count;
       };
 
-      // 값을 0으로 초기화 시키는 함수
       const handleReset = (event) => {
-        // TODO : 데이터 갱신
         count = 0;
-
-        // TODO : 화면 갱신
         const $counterSpan = document.querySelector("#counter > span");
         $counterSpan.textContent = count;
       };
