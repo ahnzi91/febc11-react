@@ -12,16 +12,33 @@ function App() {
     { _id: 3, title: "라면", done: true },
   ]);
 
+  // 할 일 추가
   const addItem = (item) => {
+    // 데이터 갱신 (상태 변경)
     const newItemList = [...itemList, item]; // 객체일 경우 새로운 객체로 만들어야 화면 갱신이 됨
     setItemList(newItemList); // setter를 이용해야 화면이 갱신된다.
   }
+
+  // 할 일 완료/미완료 처리
+  const toggleDone = (_id) => {
+    // 데이터 갱신 (상태 변경)
+    const item = itemList.find(item => item.id === _id);
+    item.done = !item.done;
+    setItemList([...itemList]);
+  };
+
+  // 할 일 삭제
+  const deleteItem = (_id) => {
+    // 데이터 갱신 (상태 변경)
+    const newItemList = itemList.filter(item => item._id !== _id);
+    setItemList(newItemList);
+  };
 
   // JSX 문법으로 만들어지는 UI 리턴
   return (
     <div id="todo">
       <Header />  
-      <Todo itemList={ itemList } addItem={ addItem } />
+      <Todo itemList={ itemList } addItem={ addItem } toggleDone={ toggleDone } deleteItem={ deleteItem } />
       <Footer />
     </div>
   );

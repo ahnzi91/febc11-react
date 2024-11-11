@@ -1,7 +1,7 @@
 import TodoItem from "./TodoItem";
 
-function TodoList({ itemList }) {
-  const list = itemList.map((item) => <TodoItem item={ item } key={ item._id } />);
+function TodoList({ itemList, toggleDone, deleteItem }) {
+  const list = itemList.map((item) => <TodoItem item={ item } key={ item._id } toggleDone={ toggleDone } deleteItem={ deleteItem } />);
   return (
     <ul className="todolist">
       { list }
