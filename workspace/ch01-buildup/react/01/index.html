@@ -38,16 +38,10 @@
 
         return (
           <div id="counter">
-            <button type="button" onClick={handleDown}>
-              -
-            </button>
-            <button type="button" onClick={(event) => handleReset(event)}>
-              0
-            </button>
-            <button type="button" onClick={handleUp}>
-              +
-            </button>
-            <span>{count}</span>
+            <button type="button" onClick={ handleDown }>-</button>
+            <button type="button" onClick={ (event) => handleReset(event) }>0</button>
+            <button type="button" onClick={ handleUp }>+</button>
+            <span>{ count }</span>
           </div>
         );
       }

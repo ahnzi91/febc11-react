@@ -15,27 +15,31 @@
 
       import DOMUtils from "./main.js";
 
-      const $h1 = obj.createElement("h1", null, "Counter - createElement() 라이브러리 사용");
-      const $p = obj.createElement(
+      const $h1 = DOMUtils.createElement("h1", null, "Counter - createElement() 라이브러리 사용");
+      const $p = DOMUtils.createElement(
         "p",
         null,
         "파일 경로: ",
-        obj.createElement("span", { id: "filepath" })
+        DOMUtils.createElement("span", { id: "filepath" })
       );
-      const $downButton = obj.createElement(
+      const $downButton = DOMUtils.createElement(
         "button",
         { type: "button", onclick: "handleDown()" },
         "-"
       );
-      const $resetButton = obj.createElement(
+      const $resetButton = DOMUtils.createElement(
         "button",
         { type: "button", onclick: "handleReset(event)" },
         0
       );
-      const $upButton = obj.createElement("button", { type: "button", onclick: "handleUp()" }, "+");
-      const $span = obj.createElement("span", null, 0);
-      const $header = obj.createElement("header", null, $h1, $p);
-      const $counterDiv = obj.createElement(
+      const $upButton = DOMUtils.createElement(
+        "button",
+        { type: "button", onclick: "handleUp()" },
+        "+"
+      );
+      const $span = DOMUtils.createElement("span", null, 0);
+      const $header = DOMUtils.createElement("header", null, $h1, $p);
+      const $counterDiv = DOMUtils.createElement(
         "div",
         { id: "counter" },
         $downButton,
@@ -43,7 +47,7 @@
         $upButton,
         $span
       );
-      const $appDiv = obj.createElement("div", { id: "app" }, $header, $counterDiv);
+      const $appDiv = DOMUtils.createElement("div", { id: "app" }, $header, $counterDiv);
 
       document.getElementById("root").appendChild($appDiv);
 
