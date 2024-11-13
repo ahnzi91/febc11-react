@@ -12,15 +12,12 @@
       import DOMUtils from "./main.js";
 
       function Header() {
-        return DOMUtils.createElement(
-          "header",
-          null,
-          DOMUtils.createElement("h1", null, "Counter - 상태 변경 시 자동 리렌더링"),
-          DOMUtils.createElement(
-            "p",
-            null,
-            "파일 경로: ",
-            DOMUtils.createElement("span", { id: "filepath" }, `ch${document.URL.split("/ch")[1]}`)
+        return (
+          DOMUtils.createElement("header", null,
+            DOMUtils.createElement("h1", null, "Counter - 컴포넌트로 분리"),
+            DOMUtils.createElement("p",  null, "파일 경로: ",
+              DOMUtils.createElement("span", { id: "filepath" }, `ch${document.URL.split("/ch")[1]}`)
+            )
           )
         );
       }

@@ -9,18 +9,15 @@
     <div id="root"></div>
 
     <script type="module">
-      import obj from "./main.js";
+      import DOMUtils from "./main.js";
 
       function Header() {
-        return obj.createElement(
-          "header",
-          null,
-          obj.createElement("h1", null, "Counter - 컴포넌트로 분리"),
-          obj.createElement(
-            "p",
-            null,
-            "파일 경로: ",
-            obj.createElement("span", { id: "filepath" }, `ch${document.URL.split("/ch")[1]}`)
+        return (
+          DOMUtils.createElement("header", null,
+            DOMUtils.createElement("h1", null, "Counter - 컴포넌트로 분리"),
+            DOMUtils.createElement("p",  null, "파일 경로: ",
+              DOMUtils.createElement("span", { id: "filepath" }, `ch${document.URL.split("/ch")[1]}`)
+            )
           )
         );
       }
@@ -45,25 +42,21 @@
           $counterSpan.textContent = count;
         };
 
-        return obj.createElement(
-          "div",
-          { id: "counter" },
-          obj.createElement("button", { type: "button", onclick: handleDown }, "-"),
-          obj.createElement(
-            "button",
-            { type: "button", onclick: (event) => handleReset(event) },
-            0
-          ),
-          obj.createElement("button", { type: "button", onclick: handleUp }, "+"),
-          obj.createElement("span", null, 0)
+        return ( 
+          DOMUtils.createElement("div", { id: "counter" },
+            DOMUtils.createElement("button", { type: "button", onclick: handleDown }, "-"),
+            DOMUtils.createElement("button", { type: "button", onclick: (event) => handleReset(event) }, 0),
+            DOMUtils.createElement("button", { type: "button", onclick: handleUp }, "+"),
+            DOMUtils.createElement("span", null, 0)
+          )
         );
       }
 
       function App() {
-        return obj.createElement("div", { id: "app" }, Header, Counter);
+        return DOMUtils.createElement("div", { id: "app" }, Header, Counter);
       }
 
-      obj.createRoot(document.getElementById("root")).render(App);
+      DOMUtils.createRoot(document.getElementById("root")).render(App);
     </script>
   </body>
 </html>

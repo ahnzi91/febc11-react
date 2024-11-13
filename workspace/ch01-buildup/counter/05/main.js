@@ -1,4 +1,4 @@
-const obj = {
+const DOMUtils = {
   // 지정한 속성과 자식 요소를 가지는 요소 노드를 생성해서 반환
   createElement: (tag, props, ...children) => {
     // 요소 노드 생성
@@ -40,4 +40,4 @@ const obj = {
   },
 };
 
-export default obj;
+export default DOMUtils;
