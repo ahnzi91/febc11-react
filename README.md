@@ -7,47 +7,60 @@
 ## 수업 목차
 
 ### 1장 리액트 빌드업
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch01-buildup>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch01-buildup>
 
 ### 2장 리액트 시작하기
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch02-start>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch02-start>
 
 ### 3장 리액트 훅
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch03-hooks>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch03-hooks>
 
 ### 4장 클래스 컴포넌트와 컴포넌트의 라이프 사이클
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch04-class>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch04-class>
 
 ### 5장 고차 함수
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch05-highorder>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch05-highorder>
 
 ### 6장 컨텍스트 API
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch06-contextapi>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch06-contextapi>
 
 ### 7장 리액트 라우터
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch07-router>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch07-router>
 
 ### 8장 상태 관리 라이브러리
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch08-globalstate>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch08-globalstate>
 
 ### 9장 리액트에서 CSS 사용
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch09-css>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch09-css>
 
 ### 10장 HTTP 통신과 Ajax
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch10-ajax>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch10-ajax>
 
 ### 11장 백엔드 개발과 API 서버
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch11-api>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch11-api>
 
 ### 12장 Next.js
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch12-nextjs>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch12-nextjs>
 
 ### 13장 프로젝트 준비
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch13-skeleton>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch13-skeleton>
 
 ### Todo List App
-* <https://uzoolove.github.io/febc11-react/workspace-ins/app/todolist>
 
+- <https://uzoolove.github.io/febc11-react/workspace-ins/app/todolist>
 
 ## 수업 스케쥴(일정은 변동 가능)
 
@@ -156,7 +169,6 @@
 - 이미 실행중이면 File > New Window 메뉴로 새로운 VS Code 실행
 
 2. File > Preferences > Settings
-<<<<<<< HEAD
    - "Files: Auto Save": onFocusChange
    - "Editor: Font Size": 각자 맞춰서 조절
    - "Editor: Tab Size": 2
@@ -165,16 +177,6 @@
      - Add Pattern > `febc11-react/workspace-ins/**` 입력한 후 OK 선택
      - Add Pattern > `febc11-react/sample/**` 입력한 후 OK 선택
      - Readonly Include가 보이지 않을 경우 VSCode를 최신 버전(1.79 이상)으로 업데이트
-=======
-	* "Files: Auto Save": onFocusChange
-	* "Editor: Font Size": 각자 맞춰서 조절
-	* "Editor: Tab Size": 2
-	* "Editor: Detect Indentation": 체크 해제
-	* Workspace 탭 > "Files: Readonly Include"
-		- Add Pattern > `workspace-ins/**` 입력한 후 OK 선택
-		- Add Pattern > `sample/**` 입력한 후 OK 선택
-		- Readonly Include가 보이지 않을 경우 VSCode를 최신 버전(1.79 이상)으로 업데이트
->>>>>>> 826a746462ddd7fa1fdff532847e6fc50db23d68
 
 ### React 개발용 웹브라우저 플러그인
 
@@ -253,9 +255,11 @@ git pull upstream main
   - 비교할 대상 파일 선택
 
 <<<<<<< HEAD
+
 ## 수업 목차
 
 ### 1장 리액트 빌드업
+
 <<<<<<< HEAD
 
 - <https://uzoolove.github.io/febc11-react/workspace-ins/01-buildup>
@@ -306,53 +310,64 @@ git pull upstream main
 
 ### 13장 프로젝트 준비
 
-- <https://uzoolove.github.io/febc11-react/workspace-ins/13-skeleton>
-=======
+- # <https://uzoolove.github.io/febc11-react/workspace-ins/13-skeleton>
+
 * <https://uzoolove.github.io/febc11-react/workspace-ins/ch01-buildup>
 
 ### 2장 리액트 시작하기
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch02-start>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch02-start>
 
 ### 3장 리액트 훅
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch03-hooks>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch03-hooks>
 
 ### 4장 클래스 컴포넌트와 컴포넌트의 라이프 사이클
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch04-class>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch04-class>
 
 ### 5장 고차 함수
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch05-highorder>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch05-highorder>
 
 ### 6장 컨텍스트 API
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch06-contextapi>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch06-contextapi>
 
 ### 7장 리액트 라우터
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch07-router>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch07-router>
 
 ### 8장 상태 관리 라이브러리
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch08-globalstate>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch08-globalstate>
 
 ### 9장 리액트에서 CSS 사용
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch09-css>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch09-css>
 
 ### 10장 HTTP 통신과 Ajax
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch10-ajax>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch10-ajax>
 
 ### 11장 백엔드 개발과 API 서버
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch11-api>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch11-api>
 
 ### 12장 Next.js
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch12-nextjs>
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch12-nextjs>
 
 ### 13장 프로젝트 준비
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch13-skeleton>
->>>>>>> 826a746462ddd7fa1fdff532847e6fc50db23d68
+
+- <https://uzoolove.github.io/febc11-react/workspace-ins/ch13-skeleton>
+  > > > > > > > 826a746462ddd7fa1fdff532847e6fc50db23d68
 
 ### Todo List App
 
-- <https://uzoolove.github.io/febc11-react/workspace-ins/app/todolist>
-=======
+- # <https://uzoolove.github.io/febc11-react/workspace-ins/app/todolist>
 
->>>>>>> 888e6df90b8a53ff0bbca534451de4dda0828575
+> > > > > > > 888e6df90b8a53ff0bbca534451de4dda0828575
 
 ## 참고 사이트
 
@@ -430,13 +445,7 @@ git pull upstream main
 - 문서: <https://learning.postman.com/docs>
 
 #### Bruno
-<<<<<<< HEAD
 
 - 홈페이지: <https://www.usebruno.com>
 - 다운로드: <https://www.usebruno.com/downloads>
-- 문서: <https://docs.usebruno.com/introduction>
-=======
-* 홈페이지: <https://www.usebruno.com>
-* 다운로드: <https://www.usebruno.com/downloads>
-* 문서: <https://docs.usebruno.com/introduction>
->>>>>>> 888e6df90b8a53ff0bbca534451de4dda0828575
+- # 문서: <https://docs.usebruno.com/introduction>
