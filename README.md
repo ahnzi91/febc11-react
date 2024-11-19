@@ -385,12 +385,16 @@ git pull upstream main
 - <https://babeljs.io/repl>
 
 ### React 공식 홈페이지
+<<<<<<< HEAD
 
 - <https://react.dev>
 
 ### React 홈페이지 한글 (비공식)
 
 - <https://react-ko.dev>
+=======
+* <https://ko.react.dev>
+>>>>>>> f5b7854f52252f339f7354004980a4273e8321bc
 
 ### JSX 변환기 (HTML을 JSX로 변환)
 
@@ -445,7 +449,13 @@ git pull upstream main
 - 문서: <https://learning.postman.com/docs>
 
 #### Bruno
+<<<<<<< HEAD
 
 - 홈페이지: <https://www.usebruno.com>
 - 다운로드: <https://www.usebruno.com/downloads>
 - # 문서: <https://docs.usebruno.com/introduction>
+=======
+* 홈페이지: <https://www.usebruno.com>
+* 다운로드: <https://www.usebruno.com/downloads>
+* 문서: <https://docs.usebruno.com/introduction>
+>>>>>>> f5b7854f52252f339f7354004980a4273e8321bc
