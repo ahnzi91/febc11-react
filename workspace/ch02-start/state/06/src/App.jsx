@@ -15,11 +15,19 @@ function App() {
     handleSubmit,
     watch,
     formState: { errors },
-  } = useForm({ defaultValues: { name: "", email: "", cellphone: "010" } });
+  } = useForm({
+    mode: "onBlur", // 최초 검증하는 시점을 정의. default: onSubmit
+    reValidateMode: "onBlur", // 재검증 시점, default: onChange
+    criteriaMode: "", // errors 객체에 첫 오류 하나만 포함하거나(firstError) 전부(all) 포함, default: firstError
+    defaultValues: { name: "", email: "", cellphone: "010" },
+  });
 
+  // handleSubmit에서 검증을 통과할 경우 호출됨
   const onSubmit = (user) => {
     console.log("서버에 전송", user);
   };
+
+  console.log(errors);
 
   return (
     <>
@@ -34,6 +42,10 @@ function App() {
             minLength: {
               value: 2,
               message: "2글자 이상 입력하세요.",
+            },
+            pattern: {
+              value: /^[^\d]*$/, // 숫자는 포함할 수 없음
+              message: "숫자를 입력할 수 없습니다.",
             },
           })}
         />
