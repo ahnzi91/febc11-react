@@ -1,18 +1,21 @@
-export default function EditAddrss({ addressBook, handleAddressChange }) {
+import { Fragment } from "react";
+
+export default function EditAddress({ addressBook, handleAddressChange }) {
   const list = addressBook.map((address) => {
     return (
-      <div key={address.id}>
+      <Fragment key={address.id}>
         <label htmlFor={address.id}>{address.name}</label>
         <input
-          type="text"
           id={address.id}
-          name={address.name}
+          type="text"
+          name={address.id}
           value={address.value}
           onChange={handleAddressChange}
         />
         <br />
-      </div>
+      </Fragment>
     );
   });
+
   return list;
 }

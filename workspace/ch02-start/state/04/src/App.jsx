@@ -1,5 +1,6 @@
 import { useState } from "react";
-import EditAddrss from "./components/EditAddress";
+import { produce } from "immer";
+import EditAddress from "./components/EditAddress";
 
 function App() {
   const [user, setUser] = useState({
@@ -29,27 +30,79 @@ function App() {
     },
   });
 
-  const handleAddressChange = (event) => {};
+  const handleAddressChange = (event) => {
+    // 상태의 불변성이 지 켜지지 않음
+    // const address = user.extra.addressBook.find(
+    //   (address) => address.id === Number(event.target.name)
+    // );
+    // address.value = event.target.value;
+    // const newState = { ...user };
+
+    // 상태의 불변성을 지키기 위해 복잡한 추가 작업 필요
+    // const newAddressBook = user.extra.addressBook.map((address) => {
+    //   if (address.id === Number(event.target.name)) {
+    //     return { ...address, value: event.target.value };
+    //   } else {
+    //     return address;
+    //   }
+    // });
+
+    // const newState = {
+    //   ...user,
+    //   extra: {
+    //     ...user.extra,
+    //     addressBook: newAddressBook,
+    //   },
+    // };
+
+    // immer를 사용해서 불변성 유지
+    const newState = produce(user, (draft) => {
+      const address = draft.extra.addressBook.find(
+        (address) => address.id === Number(event.target.name)
+      );
+      address.value = event.target.value;
+    });
+
+    setUser(newState);
+
+    // 회사 주소가 변경될 경우
+    console.log("user", user === newState); // false
+    console.log("user.extra", user.extra === newState.extra); // false
+    console.log("user.extra.addressBook", user.extra.addressBook === newState.extra.addressBook); // false
+    console.log("회사", user.extra.addressBook[0] === newState.extra.addressBook[0]); // false
+    console.log("집", user.extra.addressBook[1] === newState.extra.addressBook[1]); // true
+    console.log(
+      "회사 주소",
+      user.extra.addressBook[0].value === newState.extra.addressBook[0].value
+    ); // false
+    console.log("집 주소", user.extra.addressBook[1].value === newState.extra.addressBook[1].value); // true
+    console.log("기존 회사 주소", user.extra.addressBook[0].value); // false
+  };
 
   return (
     <>
-      <h3>회원정보</h3>
+      <h2>04 상태관리 대상이 복합 객체일 경우 불변성 관리</h2>
       <p>
-        이메일 : {user.email}
+        이메일: {user.email}
         <br />
-        이름 : {user.name}
+        이름: {user.name}
         <br />
-        전화번호 : {user.phone} <br />
+        전화번호: {user.phone}
+        <br />
       </p>
       <ul>
         {user.extra.addressBook?.map((address) => (
           <li key={address.id}>
-            {address.name} : {address.value}
+            {address.name}: {address.value}
           </li>
         ))}
       </ul>
-
-      <EditAddrss addressBook={user.extra.addressBook} handleAddressChange={handleAddressChange} />
+      <p>
+        <EditAddress
+          addressBook={user.extra.addressBook}
+          handleAddressChange={handleAddressChange}
+        />
+      </p>
     </>
   );
 }
