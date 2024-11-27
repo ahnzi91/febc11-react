@@ -13,6 +13,7 @@ function Pagination({ totalPages, current = 1 }) {
       </li>
     );
   }
+
   return (
     <div className="pagination">
       <ul>{pageList}</ul>

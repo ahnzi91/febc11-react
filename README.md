@@ -256,6 +256,7 @@
   - <https://chromewebstore.google.com/search/react%20developer%20tools>
 - 설치하면 크롬 개발자 도구에 Components 탭이 추가됨
 
+<<<<<<< HEAD
 #### Redux DevTools
 
 - 리덕스 애플리케이션의 상태 변경을 추적하고 상태와 액션 정보들을 시각화 할 수 있는 개발, 디버깅 도구
@@ -263,6 +264,8 @@
   - <https://chromewebstore.google.com/search/Redux%20DevTools>
 - 설치하면 크롬 개발자 도구에 Redux 탭이 추가됨
 
+=======
+>>>>>>> 8ac9cc789d39c91abcc2293ffeb3be5c1278bbd8
 ## 실습 준비
 
 ### Github 저장소 복사
@@ -295,6 +298,11 @@ git remote add upstream https://github.com/uzoolove/febc11-react.git
 
 ```sh
 git pull upstream main
+```
+  * 충돌 발생시 임시로 필요한 코드만 복사
+```sh
+cd febc11-react/sample
+npx degit https://github.com/uzoolove/febc11-react/sample/05 05 
 ```
 
 ### sample 폴더 복사
