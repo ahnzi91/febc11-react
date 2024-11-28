@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <h1>Context API - Prop Drilling</h1>
+      <h1>Context API - Prop Drilling 대신 Context API 사용</h1>
       <div id="container">
         <h1>App</h1>
         <div id="grid">
