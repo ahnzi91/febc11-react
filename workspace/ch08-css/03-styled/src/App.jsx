@@ -1,22 +1,21 @@
-import Button from "@components/Button";
+import { Button } from "./components/StyledButton";
 import Login from "./Login";
-import styles from "./App.module.css";
+import "./App.css";
 
 function App() {
-  console.log(styles);
   return (
     <>
-      <h1>02 - CSS 모듈 사용</h1>
+      <h1>03 - Styled Comopnent 사용</h1>
 
-      <div className={styles.container}>
+      <div className="container">
         <Button>그냥 버튼</Button>
-        <Button bg="blue" color="red">
+        <Button bg="blue" color="red" size="8px">
           파란 배경의 빨간 글자
         </Button>
-        <Button bg="yellow" color="red">
+        <Button bg="yellow" color="red" size="12px">
           노란 배경의 빨간 글자
         </Button>
-        <Button bg="gray" color="blue">
+        <Button bg="gray" color="blue" size="16px">
           회색 배경의 파란 글자
         </Button>
       </div>

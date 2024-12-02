@@ -1,14 +1,13 @@
 import Button from "@components/Button";
 import Login from "./Login";
-import styles from "./App.module.css";
+import "./App.css";
 
 function App() {
-  console.log(styles);
   return (
     <>
-      <h1>02 - CSS 모듈 사용</h1>
+      <h1>04 - TailWind CSS 사용</h1>
 
-      <div className={styles.container}>
+      <div className="container">
         <Button>그냥 버튼</Button>
         <Button bg="blue" color="red">
           파란 배경의 빨간 글자
