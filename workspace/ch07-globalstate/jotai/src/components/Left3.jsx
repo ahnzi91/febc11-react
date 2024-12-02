@@ -1,13 +1,18 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
+import { useAtom } from "jotai";
+import { counterAtom } from "@jotai/atoms";
 
 function Left3() {
-  useEffect(()=>{
-    console.log('      # Left3 렌더링.');
+  useEffect(() => {
+    console.log("      # Left3 렌더링.");
   });
+
+  const [count] = useAtom(counterAtom);
+
   return (
     <div>
       <h3>Left3</h3>
-      <span>0</span>
+      <span>{count}</span>
     </div>
   );
 }
