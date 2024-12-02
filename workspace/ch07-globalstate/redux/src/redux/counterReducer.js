@@ -18,6 +18,8 @@ const counterReducer = (state = initialState, action) => {
       return { ...state, count: state.count - action.payload.step };
     case COUNTER_ACTION.RESET:
       return { ...state, count: 0 };
+    default:
+      return state;
   }
 };
 
