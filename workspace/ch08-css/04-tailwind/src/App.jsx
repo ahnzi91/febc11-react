@@ -1,13 +1,12 @@
 import Button from "@components/Button";
 import Login from "./Login";
-import "./App.css";
 
 function App() {
   return (
     <>
       <h1>04 - TailWind CSS 사용</h1>
 
-      <div className="container">
+      <div className="w-48 mt-2 mx-auto">
         <Button>그냥 버튼</Button>
         <Button bg="blue" color="red">
           파란 배경의 빨간 글자
