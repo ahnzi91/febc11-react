@@ -1,8 +1,10 @@
 import { useCallback, useEffect, useState } from "react";
+import { DotLoader } from "react-spinners";
+import { Bounce, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 import Product from "./Product";
 import Shipping from "./Shipping";
-import { DotLoader } from "react-spinners";
-
 import useAxiosInstance from "@hooks/useAxiosInstance";
 
 function App() {
@@ -15,7 +17,7 @@ function App() {
   const fetchData = async (_id) => {
     setIsLoading(true);
     try {
-      const res = await axios.get(`/products/${_id}`, { params: { delay: 2000 } });
+      const res = await axios.get(`/prodducts/${_id}`, { params: { delay: 2000 } });
       console.log("res", res);
       setData(res.data.item); // 4번 마운트 후
       setError(null);
@@ -76,6 +78,19 @@ function App() {
           <Shipping fees={shippingFees} handlePayment={handlePayment} />
         </div>
       )}
+      <ToastContainer
+        position="top-center"
+        autoClose={2000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+        transition={Bounce}
+      />
     </>
   );
 }
