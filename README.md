@@ -1,150 +1,80 @@
 # 멋쟁이 사자처럼 Front-End BootCamp 11기: React 프로그래밍
-<<<<<<< HEAD
 
-- GitHub Page에서 보기: <https://uzoolove.github.io/febc11-react>
-- 소스 코드(GitHub): <https://github.com/uzoolove/febc11-react>
 - 예제 테스트(GitHub Page): <https://uzoolove.github.io/febc11-react/workspace-ins>
-=======
-* 예제 테스트(GitHub Page): <https://uzoolove.github.io/febc11-react/workspace-ins>
->>>>>>> 0f0d1b175057d0965dbc575f6edb879e44407ee4
 
 ## 수업 목차
 
 ### 1장 리액트 빌드업
-<<<<<<< HEAD
 
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch01-buildup>
+- <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/ch01-buildup>
 
 ### 2장 리액트 시작하기
 
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch02-start>
+- <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/ch02-start>
 
 ### 3장 리액트 훅
 
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch03-hooks>
+- <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/ch03-hooks>
 
 ### 4장 클래스 컴포넌트와 컴포넌트의 라이프 사이클
 
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch04-class>
-
-### 5장 고차 함수
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch05-highorder>
-
-### 6장 컨텍스트 API
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch06-contextapi>
-
-### 7장 리액트 라우터
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch07-router>
-
-### 8장 상태 관리 라이브러리
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch08-globalstate>
-
-### 9장 리액트에서 CSS 사용
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch09-css>
-
-### 10장 HTTP 통신과 Ajax
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch10-ajax>
-
-### 11장 백엔드 개발과 API 서버
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch11-api>
-
-### 12장 Next.js
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch12-nextjs>
-
-### 13장 프로젝트 준비
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch13-skeleton>
-
-### Todo List App
-=======
-* <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/ch01-buildup>
-
-### 2장 리액트 시작하기
-* <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/ch02-start>
-
-### 3장 리액트 훅
-* <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/ch03-hooks>
-
-### 4장 클래스 컴포넌트와 컴포넌트의 라이프 사이클
-* <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/ch04-class>
+- <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/ch04-class>
 
 ### 5장 리액트 라우터
-* <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/ch05-router>
+
+- <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/ch05-router>
 
 ### 6장 컨텍스트 API
-* <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/ch06-contextapi>
+
+- <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/ch06-contextapi>
 
 ### 7장 전역 상태 관리
-* <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/ch07-globalstate>
+
+- <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/ch07-globalstate>
 
 ### 8장 리액트에서 CSS 사용
-* <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/ch08-css>
+
+- <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/ch08-css>
 
 ### 9장 HTTP 통신과 Ajax
-* <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/ch09-ajax>
+
+- <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/ch09-ajax>
 
 ### 10장 Next.js
-* <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/ch10-nextjs>
+
+- <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/ch10-nextjs>
 
 ### 11장 프로젝트 준비
-* <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/ch11-skeleton>
+
+- <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/ch11-skeleton>
 
 ### Todo List App
-* <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/app/todolist>
->>>>>>> 0f0d1b175057d0965dbc575f6edb879e44407ee4
 
-- <https://uzoolove.github.io/febc11-react/workspace-ins/app/todolist>
+- <https://github.com/uzoolove/febc11-react/tree/main/workspace-ins/app/todolist>
 
 ## 수업 스케쥴(일정은 변동 가능)
 
 ### 1주차 (2024.11.06 ~ 2024.11.08, 3일)
-<<<<<<< HEAD
 
 - TodoList - vanilla JS
 - Counter 프로그램 - 라이브러리 개발
 - TodoList - 라이브러리 이용
-- TodoList - React
 
 ### 2주차 (2024.11.11 ~ 2024.11.14, 4일)
 
+- Counter, TodoList - React
 - 리액트 란? 리액트 개발환경 설정, create-react-app, Vite
-- 리액트 개발에 자주 사용하는 자바스크립트 문법
 - JSX, 가상 DOM, 리액트 렌더링
-- 리액트 컴포넌트(함수형 컴포넌트, 클래스 컴포넌트)와 라이프 사이클
+- 리액트의 핵심 Props, State
+- 리액트 개발에 자주 사용하는 자바스크립트 문법
 
 ### 3주차 (2024.11.18 ~ 2024.11.22, 5일)
 
+- 리액트 컴포넌트(함수형 컴포넌트, 클래스 컴포넌트)와 라이프 사이클
 - 리액트 훅, useState, useEffect
 - 리액트 훅, useRef, useReducer
 - 리액트 훅, useMemo, useCallback
-- 사용자 정의 훅 만들기, 고차 컴포넌트
-=======
-* TodoList - vanilla JS 
-* Counter 프로그램 - 라이브러리 개발
-* TodoList - 라이브러리 이용
-
-### 2주차 (2024.11.11 ~ 2024.11.14, 4일)
-* Counter, TodoList - React
-* 리액트 란? 리액트 개발환경 설정, create-react-app, Vite
-* JSX, 가상 DOM, 리액트 렌더링
-* 리액트의 핵심 Props, State
-* 리액트 개발에 자주 사용하는 자바스크립트 문법
-
-### 3주차 (2024.11.18 ~ 2024.11.22, 5일)
-* 리액트 컴포넌트(함수형 컴포넌트, 클래스 컴포넌트)와 라이프 사이클
-* 리액트 훅, useState, useEffect
-* 리액트 훅, useRef, useReducer
-* 리액트 훅, useMemo, useCallback
-* 사용자 정의 훅 만들기
->>>>>>> 0f0d1b175057d0965dbc575f6edb879e44407ee4
+- 사용자 정의 훅 만들기
 
 ### 4주차 (2024.11.25 ~ 2024.11.28, 4일)
 
@@ -153,20 +83,12 @@
 - 전역 상태 관리, Recoil, Zustand
 
 ### 5주차 (2024.12.02 ~ 2024.12.06, 5일)
-<<<<<<< HEAD
 
 - HTTP 통신(Fetch API, Axios, React Query)
 - 백엔드 개발과 API 서버
-- Styled components, Tailwind CSS
+- 스타일 적용, CSS Module, Styled components, Tailwind CSS
 - 배포
 - Next.js
-=======
-* HTTP 통신(Fetch API, Axios, React Query)
-* 백엔드 개발과 API 서버
-* 스타일 적용, CSS Module, Styled components, Tailwind CSS
-* 배포
-* Next.js
->>>>>>> 0f0d1b175057d0965dbc575f6edb879e44407ee4
 
 ### 6주차 (2024.12.09 ~ 2024.12.16, 5일)
 
@@ -242,9 +164,9 @@
    - "Editor: Font Size": 각자 맞춰서 조절
    - "Editor: Tab Size": 2
    - "Editor: Detect Indentation": 체크 해제
-   - "Files: Readonly Include"
-     - Add Pattern > `febc11-react/workspace-ins/**` 입력한 후 OK 선택
-     - Add Pattern > `febc11-react/sample/**` 입력한 후 OK 선택
+   - Workspace 탭 > "Files: Readonly Include"
+     - Add Pattern > `workspace-ins/**` 입력한 후 OK 선택
+     - Add Pattern > `sample/**` 입력한 후 OK 선택
      - Readonly Include가 보이지 않을 경우 VSCode를 최신 버전(1.79 이상)으로 업데이트
 
 ### React 개발용 웹브라우저 플러그인
@@ -256,16 +178,6 @@
   - <https://chromewebstore.google.com/search/react%20developer%20tools>
 - 설치하면 크롬 개발자 도구에 Components 탭이 추가됨
 
-<<<<<<< HEAD
-#### Redux DevTools
-
-- 리덕스 애플리케이션의 상태 변경을 추적하고 상태와 액션 정보들을 시각화 할 수 있는 개발, 디버깅 도구
-- Chrome: 크롬 웹스토어에서 Redux DevTools로 검색 후 설치
-  - <https://chromewebstore.google.com/search/Redux%20DevTools>
-- 설치하면 크롬 개발자 도구에 Redux 탭이 추가됨
-
-=======
->>>>>>> 8ac9cc789d39c91abcc2293ffeb3be5c1278bbd8
 ## 실습 준비
 
 ### Github 저장소 복사
@@ -299,10 +211,12 @@ git remote add upstream https://github.com/uzoolove/febc11-react.git
 ```sh
 git pull upstream main
 ```
-  * 충돌 발생시 임시로 필요한 코드만 복사
+
+- 충돌 발생시 임시로 필요한 코드만 복사
+
 ```sh
 cd febc11-react/sample
-npx degit https://github.com/uzoolove/febc11-react/sample/01 01 
+npx degit https://github.com/uzoolove/febc11-react/sample/01 01
 ```
 
 ### sample 폴더 복사
@@ -331,121 +245,6 @@ npx degit https://github.com/uzoolove/febc11-react/sample/01 01
   - View > Command Palette > File: Compare Active File With... 선택
   - 비교할 대상 파일 선택
 
-<<<<<<< HEAD
-
-## 수업 목차
-
-### 1장 리액트 빌드업
-
-<<<<<<< HEAD
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/01-buildup>
-
-### 2장 리액트 시작하기
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/02-start>
-
-### 3장 리액트 훅
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/03-hooks>
-
-### 4장 클래스 컴포넌트와 컴포넌트의 라이프 사이클
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/04-class>
-
-### 5장 고차 함수
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/05-highorder>
-
-### 6장 컨텍스트 API
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/06-contextapi>
-
-### 7장 리액트 라우터
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/07-router>
-
-### 8장 상태 관리 라이브러리
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/08-globalstate>
-
-### 9장 리액트에서 CSS 사용
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/09-css>
-
-### 10장 HTTP 통신과 Ajax
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/10-ajax>
-
-### 11장 백엔드 개발과 API 서버
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/11-api>
-
-### 12장 Next.js
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/12-nextjs>
-
-### 13장 프로젝트 준비
-
-- # <https://uzoolove.github.io/febc11-react/workspace-ins/13-skeleton>
-
-* <https://uzoolove.github.io/febc11-react/workspace-ins/ch01-buildup>
-
-### 2장 리액트 시작하기
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch02-start>
-
-### 3장 리액트 훅
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch03-hooks>
-
-### 4장 클래스 컴포넌트와 컴포넌트의 라이프 사이클
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch04-class>
-
-### 5장 고차 함수
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch05-highorder>
-
-### 6장 컨텍스트 API
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch06-contextapi>
-
-### 7장 리액트 라우터
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch07-router>
-
-### 8장 상태 관리 라이브러리
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch08-globalstate>
-
-### 9장 리액트에서 CSS 사용
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch09-css>
-
-### 10장 HTTP 통신과 Ajax
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch10-ajax>
-
-### 11장 백엔드 개발과 API 서버
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch11-api>
-
-### 12장 Next.js
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch12-nextjs>
-
-### 13장 프로젝트 준비
-
-- <https://uzoolove.github.io/febc11-react/workspace-ins/ch13-skeleton>
-  > > > > > > > 826a746462ddd7fa1fdff532847e6fc50db23d68
-
-### Todo List App
-
-- # <https://uzoolove.github.io/febc11-react/workspace-ins/app/todolist>
-
-> > > > > > > 888e6df90b8a53ff0bbca534451de4dda0828575
-
 ## 참고 사이트
 
 ### 온라인 코드 편집기(HTML, CSS, JS)
@@ -462,16 +261,8 @@ npx degit https://github.com/uzoolove/febc11-react/sample/01 01
 - <https://babeljs.io/repl>
 
 ### React 공식 홈페이지
-<<<<<<< HEAD
 
-- <https://react.dev>
-
-### React 홈페이지 한글 (비공식)
-
-- <https://react-ko.dev>
-=======
-* <https://ko.react.dev>
->>>>>>> f5b7854f52252f339f7354004980a4273e8321bc
+- <https://ko.react.dev>
 
 ### JSX 변환기 (HTML을 JSX로 변환)
 
@@ -526,13 +317,7 @@ npx degit https://github.com/uzoolove/febc11-react/sample/01 01
 - 문서: <https://learning.postman.com/docs>
 
 #### Bruno
-<<<<<<< HEAD
 
 - 홈페이지: <https://www.usebruno.com>
 - 다운로드: <https://www.usebruno.com/downloads>
-- # 문서: <https://docs.usebruno.com/introduction>
-=======
-* 홈페이지: <https://www.usebruno.com>
-* 다운로드: <https://www.usebruno.com/downloads>
-* 문서: <https://docs.usebruno.com/introduction>
->>>>>>> f5b7854f52252f339f7354004980a4273e8321bc
+- 문서: <https://docs.usebruno.com/introduction>
