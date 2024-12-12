@@ -2,6 +2,7 @@ import ListItem from "@pages/board/ListItem";
 import { Link, useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import useAxiosInstance from "@hooks/useAxiosInstance";
+import useUserStore from "@zustand/userStore";
 
 export default function List() {
   const axios = useAxiosInstance();
