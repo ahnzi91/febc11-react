@@ -1,6 +1,5 @@
 import Link from "next/link";
-
-import ListItem from "@/app/[type]/new/ListItem";
+import ListItem from "@/app/[type]/ListItem";
 
 // 게시물 목록 조회해서 반환
 async function fetchPosts(type) {
@@ -9,6 +8,15 @@ async function fetchPosts(type) {
     headers: { "client-id": "00-board" },
   });
   return await res.json();
+}
+
+// metadata 객체를 반환하는 함수
+export async function generateMetadata({ params }) {
+  const { type } = await params;
+  return {
+    title: `${type} 게시글 목록`,
+    description: "게시물 목록 페이지입니다.",
+  };
 }
 
 // Next.js에서는 서버 컴포넌트 일 경우 async 함수로 만들 수 있다.
@@ -47,7 +55,7 @@ export default async function Page({ params }) {
           </form>
 
           <Link
-            href="/info/new"
+            href={`/${type}/new`}
             className="bg-orange-500 py-1 px-4 text-base text-white font-semibold ml-2 hover:bg-amber-400 rounded"
           >
             글작성
@@ -73,7 +81,7 @@ export default async function Page({ params }) {
                 <th className="p-2 whitespace-nowrap font-semibold hidden sm:table-cell">작성일</th>
               </tr>
             </thead>
-            <tbody key={data._id}>{list}</tbody>
+            <tbody>{list}</tbody>
           </table>
           <hr />
 

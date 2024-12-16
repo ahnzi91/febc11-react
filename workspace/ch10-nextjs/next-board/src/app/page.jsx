@@ -1,5 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
+
+export const metadata = {
+  title: {
+    absolute: "템플릿 무시",
+  },
+};
 
 export default function Home() {
   return (
